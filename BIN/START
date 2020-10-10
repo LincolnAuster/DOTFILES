@@ -1,1 +1,10 @@
-/home/lincolna/bin/START
+#!/bin/bash
+
+picom -b --experimental-backends --backend glx
+xrandr --output DP-4 --left-of HDMI-0
+polybar example & disown
+feh ~/Wallpapers/wp.png --bg-fill
+
+# MOC stuff
+mocp -S
+mocp -a /mnt/nas/Classical
