@@ -1,1 +1,0 @@
-/home/lincolna/.config/nvim/init.vim
