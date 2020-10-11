@@ -8,9 +8,9 @@ printf "\n-> "
 read choice
 
 if [ $choice == 1 ]; then
-	startx $(whereis dwm | awk {'print $2'}) & /home/lincolna/bin/START
+	startx $(whereis dwm | awk {'print $2'}) && /home/lincolna/bin/START
 fi
 
 if [ $choice == 2 ]; then
-	startx $(whereis sowm | awk {'print $2'} ) & /home/lincolna/bin/START
+	startx $(whereis sowm | awk {'print $2'} ) && /home/lincolna/bin/START
 fi

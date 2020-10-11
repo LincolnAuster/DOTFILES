@@ -1,10 +1,28 @@
 [colors]
-; background = #40763a8a
+; background = #008a3a76
 background = #8a3a76
 background-alt = #444
-foreground = #dfdfdf
+foreground = #222222
 ; foreground = #8a3a76
 foreground-alt = #555
+
+[bar/time]
+override-redirect = true
+
+monitor = ${env:MONITOR:DP-4}
+width = 10%
+height = 32
+
+offset-x = 2%
+offset-y = 4
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = Fira Code:pixelsize=12;1
+
+modules-center = date
+
 
 [bar/example]
 override-redirect = true
@@ -95,6 +113,9 @@ format-disconnected =
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
+
+left-click = "mocp -G"
+
 type = internal/date
 interval = 1
 
@@ -179,9 +200,9 @@ label = %temperature-c%
 ; label-warn = %temperature-c%
 ; label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+; ramp-0 = 
+; ramp-1 = 
+; ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [settings]
