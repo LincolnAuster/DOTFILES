@@ -62,7 +62,7 @@ modules-right = pulseaudio
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-left-click = mocp -p
+click-left = mocp -G
 
 [module/music]
 type = custom/script
