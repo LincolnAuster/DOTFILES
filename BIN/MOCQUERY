@@ -1,4 +1,0 @@
-#!/bin/bash
-
-NAME=$(mocp -Q "%song (%artist)" | cut -c -64)
-echo $NAME

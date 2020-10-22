@@ -1,4 +1,6 @@
 # Dotfiles
-sowm and dwm, st with ligatures, picom with blur
+dwm and polybar
+
+background color is #bcb49c
 
 ![screenshot](screenshot.png)
