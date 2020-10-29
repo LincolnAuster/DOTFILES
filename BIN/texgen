@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cat > $1.tex << EOF
+\\documentclass[a4paper,12pt]{article}
+\\usepackage[left=2.5cm,right=2.5cm,bottom=2cm,footskip=1cm]{geometry}
+
+\\fontencoding{T1}
+\\fontfamily{OldStandardTT}
+
+\\begin{document}
+
+\\begin{center}
+$1
+\\end{center}
+
+\\end{document}
+EOF
